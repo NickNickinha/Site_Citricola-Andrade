@@ -8,7 +8,11 @@
   <meta name="description" content="Este site é direcionado a produtos como laranja, limão, mamão, abacate ">
   <meta name="keywords" content="laranja, abacate, limao, vendas, melão, pokan,">
   <meta name="author" content="Niceia Aparecida de Oliveira">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+    integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
   <!--titulo do texto-->
   <title>Citricola Andrade</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -21,7 +25,7 @@
   <nav class="navbar">
     <div class="logo animate__animated animate__backInDown">
 
-      <h1><img src="img/Logo_Site_Png.png" width="250px" height="70px "></h1>
+      <h1><img src="img/Logo_Site_Png.png" width="200px" height="60px responsivo"></h1>
 
     </div>
     <div class="menu">
@@ -31,84 +35,188 @@
       <a id="botao" href="#">Fale Conosco</a>
     </div>
   </nav>
+
   <header class="header">
     <div class="headline">
-      <h2 style=" letter-spacing: 10px; margin-left: 70px;  font-size: 30px; text-align:center; margin-top: 80px; ">
+      <h2 style="letter-spacing:5px; font:bold; font-size: 30px; text-align: center; ">
         Voce
         esta no lugar
         certo</h2>
-      <h2 style="font-size: 70px; margin-left: 100px; text-align: center; margin-top: 10px;">Venha nos conhecer!</h2>
-      <p style=" font-size: 30px; margin-left:5px; text-align: center; ">Se você é um
-        amante de frutas ávido
-        por
-        conhecer mais sobre
-        essas maravilhas naturais ou apenas curioso para explorar
-        novos sabores;
-
-        Não perca
-        a
-        oportunidade de se encantar e se inspirar com o incrível mundo das frutas!</p>
-      </b>
+      <h2 style="font-size: 70px; text-align: center;">Venha nos conhecer!</h2>
     </div>
+  </header>
+  <container>
+    <div class="content">
+      <div class="slides">
+        <input class="input" type="radio" name="slide" id="slide1" checked>
+        <input class="input" type="radio" name="slide" id="slide2">
+        <input class="input" type="radio" name="slide" id="slide3">
+        <input class="input" type="radio" name="slide" id="slide4">
+        <input class="input" type="radio" name="slide" id="slide5">
 
-    <div id="slider">
-      <img class="selected" src="img/imagem1.jpg" alt="">
-      <img src="img/Laranja.jpg" alt="">
-      <img src="img/imagem3.jpg" alt="">
-      <img src="img/imagem4.jpg" alt="">
+
+        <div class="slide s1">
+          <img src="img/Logo_Site_Png.png" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="img/laranaja3.jpg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="img/3.jpg" alt="">
+        </div>
+
+        <div class="slide">
+          <img src="img/4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/5.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="navigation">
+      <label class="bar" for="slide1"></label>
+      <label class="bar" for="slide2"></label>
+      <label class="bar" for="slide3"></label>
+      <label class="bar" for="slide4"></label>
+      <label class="bar" for="slide5"></label>
     </div>
     <script src="script.js"></script>
 
-  </header>
+  </container>
+  <script src="script.js"></script>
+
   <section>
-    <h3 style="font-size: 50px; color: gray; margin-top: 370px; text-align: center; text-align: center;">Nossos
+    <h3 style="font-size: 40px; color: gray; margin-top: 300px; text-align:center; ">Nossos
       Produtos
     </h3><br>
     <div class="servicos">
-      <div class="card"> <!--laranja-->
+      <div class="card card1"> <!--laranja-->
         <h3>Laranja</h3>
-        <img src="img/fotos.png" alt="">
+        <img src="img/laranaja3.jpg" alt="">
       </div>
-      <div class="card"> <!--limao-->
+      <div class="card card2"> <!--limao-->
         <h3>Limão</h3>
         <img src="img/fotos.png" alt="">
       </div>
-      <div class="card"> <!--abacate-->
+      <div class="card card3"> <!--abacate-->
         <h3>Abacate</h3>
         <img src="img/fotos.png" alt="">
       </div>
-      <div class="card"> <!--morcote-->
+      <div class="card card4"> <!--morcote-->
         <h3>Morcote</h3>
         <img src="img/fotos.png" alt="">
       </div>
-      <div class="card"><!--melao-->
+      <div class="card card5"><!--melao-->
         <h3>Pokan</h3>
         <img src="img/fotos.png" alt="">
       </div>
-      <div class="card"><!--melao-->
+      <div class="card card6"><!--melao-->
         <h3>Melão</h3>
         <img src="img/fotos.png" alt="">
       </div>
-      <div class="card"><!--manga-->
+      <div class="card card7"><!--manga-->
         <h3>Melancia</h3>
         <img src="img/fotos.png" alt="">
       </div>
 
 
-    </div>
+
   </section>
-  <footer>
-    <div class="logo-rodape">
 
-      <p style="color: white; font-size: 40px; text-align: center;">Endereço:</p>
-    </div>
-    <b style="color: white; font-size: 20px;">© Todos os direitos reservados</b>
 
-  </footer>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5
+    });
+  </script>
+
   <a class="whats" target="_blank"
-    href="https://api.whatsapp.com/send?phone=5511950892454&text=Ol%C3%A1%20seja%20bem%20vindo!%20em%20que%20posso%20te%20ajudar?"><img
-      style="width: 100px;" src="img/whats.png" alt=""></a>
+    href="https://api.whatsapp.com/send?phone=5511950892454&text=Ol%C3%A1%20seja%20bem%20vindo!%20em%20que%20posso%20te%20ajudar?">
+    <div class="pulsar">
+      <img src="img/Wts1.png" alt="phone">
+    </div>
+
+    <a class="instagran" target="_blank" href="#">
+      <img style="width:50px;" src="img " alt=""></a>
 
 </body>
+<main>
+
+</main>
+<footer>
+  <div id="footer_content">
+    <div id="footer_contacts">
+      <h1>Logo</h1>
+      <p>It's all about your dreams.</p>
+
+      <div id="footer_social_media">
+        <a href="#" class="footer-link" id="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+
+      </div>
+    </div>
+
+    <ul class="footer-list">
+      <li>
+        <h3>Blog</h3>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Tech</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Adventures</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Music</a>
+      </li>
+    </ul>
+
+    <ul class="footer-list">
+      <li>
+        <h3>Products</h3>
+      </li>
+      <li>
+        <a href="#" class="footer-link">App</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Desktop</a>
+      </li>
+      <li>
+        <a href="#" class="footer-link">Cloud</a>
+      </li>
+    </ul>
+
+    <!-- <div id="footer_subscribe">
+      <h3>Subscribe</h3>
+
+      <p>
+        Enter your e-mail to get notified about
+        our news solutions
+      </p>
+
+      <div id="input_group">
+        <input type="email" id="email">
+        <button>
+          <i class="fa-regular fa-envelope"></i>
+        </button> -->
+  </div>
+  </div>
+  </div>
+
+  <div id="footer_copyright">
+    &#169
+    2024 all rights reserved
+  </div>
+</footer>
+</body>
+
+</html>
 
 </html>
